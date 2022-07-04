@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #eee;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+ul {
+    list-style-type: none
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.header {
+    background-color: rgb(13, 3, 66);
+    color: rgb(185, 178, 178);
+    padding: 30px 20px;
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+}
+.content__title {
+    color: rgb(139, 209, 34);
+}
+.content__navbar {
+    display: flex;
+    justify-items: center;
+}
+.content__navbar li {
+    margin: 0 15px;
+}
+.content__navbar li a {
+    color: #e2e8f0;
+    font-weight: bold;
+}
+/* TARJETAS */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+.card__header{
+    position: relative;
+}
+.card__header img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.card__header small {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: 8px;
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 10px;
+}
+.card__title {
+    margin-bottom: 20px;
+}
+
+.card__description {
+    margin-bottom: 40px;
+}
+.card__link {
+  background-color: #22c55e;  
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+/* **** */
+
+.courses {
+    margin-top: 40px;
+
+}
+
+.courses__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.courses__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    /* row-gap: espaciar verticalmente; */
+    /* column-gap: espaciar horizontalmente */
+}
+
+/* MEDIAQUERIES */
+@media (max-width: 992px) {
+    .courses__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px){
+    .courses__grid {
+        grid-template-columns: 1fr;
+    }
+}
